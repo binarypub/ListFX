@@ -1,9 +1,7 @@
 === ListFX ===
 
 Contributors: WordPressFX.com
-
 Donate link: N/A
-
 Tags: phplist, wordpress, plugin
 
 Requires at least: 4.4
