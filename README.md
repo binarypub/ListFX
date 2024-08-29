@@ -2,7 +2,7 @@
 
 **Contributors:** WordPressFX.com  
 **Donate link:** N/A  
-**Tags:** phplist, wordpress, plugin 
+**Tags:** phplist, wordpress, plugin   
 **Requires at least:** 4.4  
 **Tested up to:** 4.8-alpha-39357-src  
 **Stable tag:** 0.1.0  
