@@ -1,4 +1,4 @@
-=== ListFX ===
+# ListFX Plugin #
 
 **Contributors:** WordPressFX.com  
 **Donate link:** N/A  
