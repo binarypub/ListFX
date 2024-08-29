@@ -173,7 +173,7 @@ function ListFX_Settings_Page()
 </p>", null, "ListFX");
 	add_settings_field("ListFX_Checkbox", "", "ListFX_Checkbox_Display", "ListFX", "section");  
 	//add_settings_field("demo-text", "", "demo_checkbox_display", "demo", "section");  
-    register_setting("section", "ListFX_Checkbox");
+    	register_setting("section", "ListFX_Checkbox");
 	register_setting("section", "ListFX_Text");
 	register_setting("section", "ListFX_Path_2");
 
