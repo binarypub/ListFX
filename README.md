@@ -13,7 +13,10 @@ Integrates PHPList with WordPress
 
 == Description ==
 
-Integrates your PHPList installation with WordPress for lead generation purposes.  Lead capture form can be used as a widget or within a page or post.  CAN-SPAM compliant.
+Integrates your PHPList installation with WordPress for lead generation purposes. CAN-SPAM compliant.
+ListFX is a premium plugin developed by WordPressFX.com that integrates phpList seamlessly with WordPress.  
+Easily embed phpList compatible subscription forms into any WordPress page using widgets. 
+Additionally, you can capture new WordPress registrations for submission to phpList. 
 
 == Installation ==
 
