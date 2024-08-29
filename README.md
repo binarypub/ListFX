@@ -5,7 +5,7 @@
 **Tags:** phplist, wordpress, plugin   
 **Requires at least:** 4.4  
 **Tested up to:** 4.8-alpha-39357-src  
-**Stable tag:** trunk
+**Stable tag:** trunk  
 **License:** Restricted  
 **License URI:** http://www.wordpressfx.com  
 
