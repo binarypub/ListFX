@@ -22,15 +22,15 @@ class WP_Widget_PHPListAjax extends WP_Widget {
         $input = apply_filters('widget_title', $instance['input'], $instance, $this->id_base);
         $id = apply_filters('widget_id', $instance['id'], $instance, $this->id_base);
 		
-		$ListFX_Path = apply_filters('widget_id', $instance['ListFX_Path'], $instance, $this->id_base);
+	$ListFX_Path = apply_filters('widget_id', $instance['ListFX_Path'], $instance, $this->id_base);
 		
-		$label_message = apply_filters('widget_id', $instance['label_message'], $instance, $this->id_base);
-		$label_email = apply_filters('widget_id', $instance['label_email'], $instance, $this->id_base);
-		$label_name = apply_filters('widget_id', $instance['label_name'], $instance, $this->id_base);
-		$label_success = apply_filters('widget_id', $instance['label_success'], $instance, $this->id_base);
-		$label_failure = apply_filters('widget_id', $instance['label_failure'], $instance, $this->id_base);
-		$label_name_error = apply_filters('widget_id', $instance['label_name_error'], $instance, $this->id_base);
-		$label_email_error = apply_filters('widget_id', $instance['label_email_error'], $instance, $this->id_base);
+	$label_message = apply_filters('widget_id', $instance['label_message'], $instance, $this->id_base);
+	$label_email = apply_filters('widget_id', $instance['label_email'], $instance, $this->id_base);
+	$label_name = apply_filters('widget_id', $instance['label_name'], $instance, $this->id_base);
+	$label_success = apply_filters('widget_id', $instance['label_success'], $instance, $this->id_base);
+	$label_failure = apply_filters('widget_id', $instance['label_failure'], $instance, $this->id_base);
+	$label_name_error = apply_filters('widget_id', $instance['label_name_error'], $instance, $this->id_base);
+	$label_email_error = apply_filters('widget_id', $instance['label_email_error'], $instance, $this->id_base);
 
         if (!$button) {
             $button = __('Subscribe to our newsletter');
