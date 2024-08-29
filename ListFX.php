@@ -36,18 +36,7 @@ class WP_Widget_PHPListAjax extends WP_Widget {
             $button = __('Subscribe to our newsletter');
         }
 
-        //echo '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>';
-       // echo '<script type="text/javascript" src="https://s3.amazonaws.com/phplist/phplist-subscribe-0.2.min.js"></script>';
-		echo '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>';
 
-       // echo '<script type="text/javascript">var pleaseEnter = "'.$input.'"; </script>';
-       // echo '<script type="text/javascript">var thanksForSubscribing = \'<div class="subscribed">Thanks for subscribing. Please check your inbox and click the link in the request for confirmation message.</div>\'; </script> ';
-
-      //  echo '<div id="phplistsubscriberesult"></div>';
-       // echo '<form action="http://techademy.hosted.phplist.com/lists/?p=subscribe&id='.$id.'" method="post" id="phplistsubscribeform">';
-       // echo '<input type="text" name="email" value="" id="emailaddress" />';
-       // echo '<button type="submit" id="phplistsubscribe">'.$button.'</button>';
-       // echo '</form>';
     
 	
 echo '<p class="listfx" style="width:100%;">'.$label_message.'</p><form method="post" name="subscribeform" id="subscribeform" enctype="multipart/form-data">
@@ -133,10 +122,10 @@ function submitForm() {
 		$label_name_error = $instance['label_name_error'];
 		$label_email_error = $instance['label_email_error'];
 ?>
-        <p><label for="<?php echo $this->get_field_id('ListFX_Path'); ?>"><?php _e('Path to your phpList installation (http://yourdomain.com/lists):'); ?> <input class="widefat" id="<?php echo $this->get_field_id('ListFX_Path'); ?>" name="<?php echo $this->get_field_name('ListFX_Path'); ?>" type="text" value="<?php echo esc_attr($ListFX_Path); ?>" /></label></p>
+        	<p><label for="<?php echo $this->get_field_id('ListFX_Path'); ?>"><?php _e('Path to your phpList installation (http://yourdomain.com/lists):'); ?> <input class="widefat" id="<?php echo $this->get_field_id('ListFX_Path'); ?>" name="<?php echo $this->get_field_name('ListFX_Path'); ?>" type="text" value="<?php echo esc_attr($ListFX_Path); ?>" /></label></p>
 	
 		<p><label for="<?php echo $this->get_field_id('id'); ?>"><?php _e('Subscribe Page ID:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('id'); ?>" name="<?php echo $this->get_field_name('id'); ?>" type="text" value="<?php echo esc_attr($id); ?>" /></label></p>
-        <p><label for="<?php echo $this->get_field_id('button'); ?>"><?php _e('Submit Button Text :'); ?> <input class="widefat" id="<?php echo $this->get_field_id('button'); ?>" name="<?php echo $this->get_field_name('button'); ?>" type="text" value="<?php echo esc_attr($button); ?>" /></label></p>
+       		<p><label for="<?php echo $this->get_field_id('button'); ?>"><?php _e('Submit Button Text :'); ?> <input class="widefat" id="<?php echo $this->get_field_id('button'); ?>" name="<?php echo $this->get_field_name('button'); ?>" type="text" value="<?php echo esc_attr($button); ?>" /></label></p>
         <?
 		/*
 		<p><label for="<?php echo $this->get_field_id('input'); ?>"><?php _e('Input Text :'); ?> <input class="widefat" id="<?php echo $this->get_field_id('input'); ?>" name="<?php echo $this->get_field_name('input'); ?>" type="text" value="<?php echo esc_attr($input); ?>" /></label></p>
@@ -180,7 +169,7 @@ function ListFX_Settings_Page()
 {
 	
 			
-    add_settings_section("section", "ListFX Settings and Instructions <p style=\"font-size:.8em\">ListFX is a premium plugin developed by WordPressFX.com that integrates phpList seamlessly with WordPress.  Easily embed phpList compatible subscription forms into any WordPress page using widgets.  Additionally, you can capture new WordPress registrations for submission to phpList.   
+    	add_settings_section("section", "ListFX Settings and Instructions <p style=\"font-size:.8em\">ListFX is a premium plugin developed by WordPressFX.com that integrates phpList seamlessly with WordPress.  Easily embed phpList compatible subscription forms into any WordPress page using widgets.  Additionally, you can capture new WordPress registrations for submission to phpList.   
 </p>", null, "ListFX");
 	add_settings_field("ListFX_Checkbox", "", "ListFX_Checkbox_Display", "ListFX", "section");  
 	//add_settings_field("demo-text", "", "demo_checkbox_display", "demo", "section");  
@@ -195,20 +184,15 @@ function ListFX_Settings_Page()
 
 function ListFX_Checkbox_Display()
 {
-	
-	
-	
-	//$myoptions = get_option('widget_phplistajax');
-	//$myoptions = get_option('ListFX_Path');
-	//var_export( $myoptions );
+
 
    ?>
      
 
         <!-- Here we are comparing stored value with 1. Stored value is 1 if user checks the checkbox otherwise empty string. -->
         <p><input type="checkbox" name="ListFX_Checkbox" value="1" <?php checked(1, get_option('ListFX_Checkbox'), true); ?> /> <b>Capture WordPress registrations?</b></p>
-		<p><input type="text" name="ListFX_Text" value="<?php echo get_option('ListFX_Text'); ?>" /> <b>Global subscribe page ID</b> - Required to capture registrations, can assign a different subscribe page than ones used in the widgets.</p>
-	    <p><input type="text" name="ListFX_Path_2" value="<?php echo get_option('ListFX_Path_2'); ?>" /> <b>Global phpList path</b> - Required to capture registrations, can use a different phpList install than used on widgets if desired.</p>
+	<p><input type="text" name="ListFX_Text" value="<?php echo get_option('ListFX_Text'); ?>" /> <b>Global subscribe page ID</b> - Required to capture registrations, can assign a different subscribe page than ones used in the widgets.</p>
+	<p><input type="text" name="ListFX_Path_2" value="<?php echo get_option('ListFX_Path_2'); ?>" /> <b>Global phpList path</b> - Required to capture registrations, can use a different phpList install than used on widgets if desired.</p>
 
    
    
@@ -311,22 +295,19 @@ add_action('widgets_init', create_function('', 'return register_widget("WP_Widge
 
 function ListFX_Register($user_id){
   
-  // submit to phpList
-  //http://phoneseek.org/list-dev/index.php?p=asubscribe&id=3&email=steven.dorty@gmail.com
-  //strip_tags($_POST['user_login']). ' - ' . strip_tags($_POST['user_email']
         
 		
 		$ListFX_Email = strip_tags($_POST['user_email']);
 		
 		if (empty($ListFX_Email)) {
 		
-        $ListFX_Email = strip_tags($_POST['reg_email']);		
+       			$ListFX_Email = strip_tags($_POST['reg_email']);		
 			
 		}
 		
 		if (empty($ListFX_Email)) {
 		
-        $ListFX_Email = strip_tags($_POST['email']);		
+        		$ListFX_Email = strip_tags($_POST['email']);		
 			
 		}
 		
