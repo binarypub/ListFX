@@ -113,14 +113,14 @@ function submitForm() {
         $id = $instance['id'];
         $button = $instance['button'];
         $input = $instance['input'];
-		$ListFX_Path = $instance['ListFX_Path'];
-		$label_message = $instance['label_message'];
-		$label_email = $instance['label_email'];
-		$label_name = $instance['label_name'];
-		$label_success = $instance['label_success'];
-		$label_failure = $instance['label_failure'];
-		$label_name_error = $instance['label_name_error'];
-		$label_email_error = $instance['label_email_error'];
+	$ListFX_Path = $instance['ListFX_Path'];
+	$label_message = $instance['label_message'];
+	$label_email = $instance['label_email'];
+	$label_name = $instance['label_name'];
+	$label_success = $instance['label_success'];
+	$label_failure = $instance['label_failure'];
+	$label_name_error = $instance['label_name_error'];
+	$label_email_error = $instance['label_email_error'];
 ?>
         	<p><label for="<?php echo $this->get_field_id('ListFX_Path'); ?>"><?php _e('Path to your phpList installation (http://yourdomain.com/lists):'); ?> <input class="widefat" id="<?php echo $this->get_field_id('ListFX_Path'); ?>" name="<?php echo $this->get_field_name('ListFX_Path'); ?>" type="text" value="<?php echo esc_attr($ListFX_Path); ?>" /></label></p>
 	
@@ -149,14 +149,14 @@ function submitForm() {
         $instance['id'] = strip_tags($new_instance['id']);
         $instance['button'] = strip_tags($new_instance['button']);
         $instance['input'] = strip_tags($new_instance['input']);
-		$instance['ListFX_Path'] = strip_tags($new_instance['ListFX_Path']);
-		$instance['label_message'] = strip_tags($new_instance['label_message']);
-		$instance['label_email'] = strip_tags($new_instance['label_email']);
-		$instance['label_name'] = strip_tags($new_instance['label_name']);
-		$instance['label_success'] = strip_tags($new_instance['label_success']);
-		$instance['label_failure'] = strip_tags($new_instance['label_failure']);
-		$instance['label_email_error'] = strip_tags($new_instance['label_email_error']);
-		$instance['label_name_error'] = strip_tags($new_instance['label_name_error']);
+	$instance['ListFX_Path'] = strip_tags($new_instance['ListFX_Path']);
+	$instance['label_message'] = strip_tags($new_instance['label_message']);
+	$instance['label_email'] = strip_tags($new_instance['label_email']);
+	$instance['label_name'] = strip_tags($new_instance['label_name']);
+	$instance['label_success'] = strip_tags($new_instance['label_success']);
+	$instance['label_failure'] = strip_tags($new_instance['label_failure']);
+	$instance['label_email_error'] = strip_tags($new_instance['label_email_error']);
+	$instance['label_name_error'] = strip_tags($new_instance['label_name_error']);
 		
         return $instance;
     }
