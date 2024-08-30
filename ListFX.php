@@ -126,7 +126,7 @@ function submitForm() {
 	
 		<p><label for="<?php echo $this->get_field_id('id'); ?>"><?php _e('Subscribe Page ID:'); ?> <input class="widefat" id="<?php echo $this->get_field_id('id'); ?>" name="<?php echo $this->get_field_name('id'); ?>" type="text" value="<?php echo esc_attr($id); ?>" /></label></p>
        		<p><label for="<?php echo $this->get_field_id('button'); ?>"><?php _e('Submit Button Text :'); ?> <input class="widefat" id="<?php echo $this->get_field_id('button'); ?>" name="<?php echo $this->get_field_name('button'); ?>" type="text" value="<?php echo esc_attr($button); ?>" /></label></p>
-        <?
+<?
 		/*
 		<p><label for="<?php echo $this->get_field_id('input'); ?>"><?php _e('Input Text :'); ?> <input class="widefat" id="<?php echo $this->get_field_id('input'); ?>" name="<?php echo $this->get_field_name('input'); ?>" type="text" value="<?php echo esc_attr($input); ?>" /></label></p>
 		*/
@@ -139,8 +139,7 @@ function submitForm() {
 
 		<p><label for="<?php echo $this->get_field_id('label_name_error'); ?>"><?php _e('Name Error Message (appears when invalid name is entered):'); ?> <input class="widefat" id="<?php echo $this->get_field_id('label_name_error'); ?>" name="<?php echo $this->get_field_name('label_name_error'); ?>" type="text" value="<?php echo esc_attr($label_name_error); ?>" /></label></p>
 		<p><label for="<?php echo $this->get_field_id('label_email_error'); ?>"><?php _e('Email Error Message (appears when invalid email address is entered):'); ?> <input class="widefat" id="<?php echo $this->get_field_id('label_email_error'); ?>" name="<?php echo $this->get_field_name('label_email_error'); ?>" type="text" value="<?php echo esc_attr($label_email_error); ?>" /></label></p>
-
-		<?php
+<?php
     }
 
     function update( $new_instance, $old_instance ) {
@@ -186,7 +185,7 @@ function ListFX_Checkbox_Display()
 {
 
 
-   ?>
+?>
      
 
         <!-- Here we are comparing stored value with 1. Stored value is 1 if user checks the checkbox otherwise empty string. -->
