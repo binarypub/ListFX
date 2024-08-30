@@ -275,7 +275,7 @@ function ListFX_Page()
 
 function menu_item()
 {
-  add_submenu_page("options-general.php", "ListFX", "ListFX", "manage_options", "ListFX", "ListFX_Page"); 
+	add_submenu_page("options-general.php", "ListFX", "ListFX", "manage_options", "ListFX", "ListFX_Page"); 
 }
  
 add_action("admin_menu", "menu_item");
