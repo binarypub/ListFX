@@ -3,7 +3,7 @@
 Plugin Name: ListFX WordPress phpList Plugin
 Plugin URI: http://www.WordPressFX.com
 Description: Connects WordPress to phpList
-Version: 1.0.0
+Version: 1.0
 Author: WordPress FX
 License: Restricted
 */
